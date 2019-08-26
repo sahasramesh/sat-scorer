@@ -189,20 +189,3 @@ while True:
         window.Element('_OUTPUT_').Update(readingDict[values[0]]*10+writingDict[values[1]]*10+mathDict[values[2]])
 
 window.Close()
-'''
-layout = [[sg.Text('Your typed chars appear here:'), sg.Text('', size=(15,1), key='_OUTPUT_')],
-          [sg.Input(key='_IN_')],
-          [sg.Button('Show'), sg.Button('Exit')]]
-
-window = sg.Window('Window Title', layout)
-
-'''
-
-"""
-print("SAT SCORER")
-readingRaw = input("Enter your raw score for reading: ")
-writingRaw = input("Enter your raw score for writing: ")
-mathRaw = input("Enter your raw score for math: ")
-
-print("\nYou got a", readingDict[readingRaw]*10+writingDict[writingRaw]*10+mathDict[mathRaw])
-"""
